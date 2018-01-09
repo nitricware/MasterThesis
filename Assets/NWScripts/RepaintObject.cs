@@ -5,11 +5,14 @@ using HoloToolkit.Unity.InputModule;
 
 public class RepaintObject : MonoBehaviour, IInputClickHandler
 {
-    public Material greenMaterial;
+    public Material repaintedMaterial;
+    private Material originalMaterial;
+    private bool isRepainted;
 
 	// Use this for initialization
 	void Start () {
-
+        originalMaterial = GetComponent<Renderer>().material;
+        isRepainted = false;
     }
 	
 	// Update is called once per frame
@@ -19,6 +22,17 @@ public class RepaintObject : MonoBehaviour, IInputClickHandler
 
     public virtual void OnInputClicked(InputClickedEventData eventData)
     {
-        GetComponent<Renderer>().material = greenMaterial;
+        var newMaterial = repaintedMaterial;
+        if (isRepainted)
+        {
+            newMaterial = originalMaterial;
+            isRepainted = false;
+        } else
+        {
+            newMaterial = repaintedMaterial;
+            isRepainted = true;
+        }
+
+        GetComponent<Renderer>().material = newMaterial;
     }
 }
