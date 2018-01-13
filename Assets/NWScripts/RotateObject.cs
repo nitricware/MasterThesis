@@ -20,5 +20,6 @@ public class RotateObject : MonoBehaviour, IInputClickHandler
     public virtual void OnInputClicked(InputClickedEventData eventData)
     {
         elementsToRotate.transform.Rotate(90, 0, 0);
+        this.transform.Rotate(90, 0, 0);
     }
 }
