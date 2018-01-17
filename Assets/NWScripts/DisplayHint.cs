@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class WasGuckstDu : MonoBehaviour
+public class DisplayHint : MonoBehaviour
 {
     public Text hintBox;
     private Dictionary<string, string> labels;
