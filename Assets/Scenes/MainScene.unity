@@ -3970,7 +3970,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbad991a9894486418e4988222483ef8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DefaultGazeDistance: 20
+  DefaultGazeDistance: 4
   PlaceParentOnTap: 1
   ParentGameObjectToPlace: {fileID: 604603042}
   IsBeingPlaced: 0
@@ -4514,6 +4514,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elementsToRotate: {fileID: 1456859305}
+  degToRot: 45
 --- !u!23 &1372700061
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4898,7 +4899,7 @@ GameObject:
   - component: {fileID: 1689457968}
   - component: {fileID: 1689457972}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: HUD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
