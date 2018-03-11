@@ -13,12 +13,12 @@ public class DisplayHint : MonoBehaviour
 	{
         labels = new Dictionary<string, string>
         {
-            {"metacarpals", "Mittelhandknochen" },
-            {"carpals", "Handwurzelknochen" },
-            {"arm", "Radius/Ulna" },
+            {"metacarpals", "ossa metacarpi" },
+            {"carpals", "ossa carpi" },
+            {"arm", "radius/ulna" },
             {"interossi", "m. interossi" },
-            {"flexorPollicisTendon", "Daumenflexorsehne" },
-            {"flexorTendons", "Fingerflexorensehnen" },
+            {"flexorPollicisTendon", "tendo musculus flexor pollicis" },
+            {"flexorTendons", "Tendo musculus flexor digitorum" },
             {"discus", "discus interarticularis" },
             {"aulnaris", "a. ulnaris" }
         };
